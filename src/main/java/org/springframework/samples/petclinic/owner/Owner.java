@@ -63,6 +63,15 @@ public class Owner extends Person {
 	@JoinColumn(name = "owner_id")
 	@OrderBy("name")
 	private List<Pet> pets = new ArrayList<>();
+	private Integer age;
+
+	public Integer getAge() {
+		return age;
+	}
+
+	public void setAge(Integer age) {
+		this.age = age;
+	}
 
 	public String getAddress() {
 		return this.address;
